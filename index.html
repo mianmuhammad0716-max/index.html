@@ -1,152 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trading Platform</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #0f111a;
-      color: #e0e6f7;
-      font-family: 'Poppins', sans-serif;
-    }
-    header {
-      background: linear-gradient(135deg, #141b2d, #1f243e);
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-      font-weight: 700;
-      color: #00d4ff;
-    }
-    header p {
-      font-size: 1.2em;
-      color: #a0b0d0;
-      margin-top: 10px;
-    }
-    .btn {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 12px 30px;
-      background: linear-gradient(45deg, #00d4ff, #0088cc);
-      color: #0f111a;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: linear-gradient(45deg, #0088cc, #00d4ff);
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #141b2d;
-      padding: 15px 0;
-    }
-    nav a {
-      color: #e0e6f7;
-      margin: 0 20px;
-      text-decoration: none;
-      font-size: 1em;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00d4ff;
-    }
-
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 60px 20px;
-      gap: 30px;
-    }
-    .feature-card {
-      background-color: #1f243e;
-      padding: 30px;
-      width: 260px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s, box-shadow 0.3s;
-      text-align: center;
-    }
-    .feature-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
-    }
-    .feature-card h3 {
-      margin-bottom: 15px;
-      color: #00d4ff;
-    }
-    .feature-card p {
-      color: #c0c9e5;
-    }
-
-    .chart-section {
-      text-align: center;
-      padding: 50px 20px;
-    }
-    .chart-section img {
-      max-width: 90%;
-      border-radius: 15px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-    }
-
-    footer {
-      background-color: #141b2d;
-      text-align: center;
-      padding: 40px 20px;
-      color: #a0b0d0;
-      font-size: 0.9em;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Demo Trading</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="login-container">
+    <h1>Welcome to AutoTrade Demo</h1>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <button id="loginBtn">Login</button>
+  </div>
 
-  <header>
-    <h1>AutoTrade</h1>
-    <p>Your automated trading bot platform</p>
-    <a href="#" class="btn">Get Started</a>
-  </header>
-
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Features</a>
-    <a href="#">Charts</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <section class="features">
-    <div class="feature-card">
-      <h3>Real‑time Bots</h3>
-      <p>Your bots trade 24/7 on live markets.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Secure Funds</h3>
-      <p>We use advanced encryption and data security.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Analytics</h3>
-      <p>Live reports, charts, and performance summaries.</p>
-    </div>
-  </section>
-
-  <section class="chart-section">
-    <h2>Sample Trading Chart</h2>
-    <img src="https://via.placeholder.com/800x400.png?text=Trading+Chart" alt="Trading Chart">
-  </section>
-
-  <footer>
-    &copy; 2025 AutoTrade. All Rights Reserved.
-  </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
